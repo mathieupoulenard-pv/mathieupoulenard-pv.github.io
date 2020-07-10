@@ -1,0 +1,75 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f25156;
+  color: #ffffff;
+}
+header h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #f25156;
+  font-weight: 600;
+}
+h2 + .subtitle {
+  font-size: 1.5 rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5 rem;
+}
+
+.btn {
+  margin: 1.3rem 0;
+  padding: 0.7rem 1.7rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.button-primary {
+  background: linear-gradient(to right, transparent 50%, #f25156 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease;
+  color: #ffffff;
+  border-color: #f25156;
+}
+.button-primary:hover {
+  background-position: left bottom;
+  color: #f25156;
+}
+
+.button-secondary {
+  background: linear-gradient(to right, transparent 50%, #789bb0 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease;
+  color: #ffffff;
+  border-color: #789bb0;
+}
+.button-secondary:hover {
+  background-position: left bottom;
+  color: #789bb0;
+}
+
+.bg-primary-light {
+  background-color: #fde5e6;
+}
+
+.bloc {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */

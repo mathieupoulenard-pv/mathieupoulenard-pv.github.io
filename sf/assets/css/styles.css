@@ -7,7 +7,6 @@ body {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  overflow-x: hidden;
 }
 
 .wrap {
@@ -22,18 +21,18 @@ body {
 
 header {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   background-color: #f25156;
   color: #ffffff;
 }
-header h1 {
-  font-size: 60px;
+header .big-title {
+  font-size: 1.7rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   color: #f25156;
   font-weight: 600;
@@ -87,8 +86,6 @@ h3 {
 }
 
 .bloc {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
-/*# sourceMappingURL=styles.css.map */

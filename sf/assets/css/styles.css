@@ -1,6 +1,23 @@
+html {
+  display: block;
+}
+
 body {
+  height: 100%;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  overflow-x: hidden;
+}
+
+.wrap {
+  bottom: 0;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 header {
@@ -22,8 +39,10 @@ h2 {
   font-weight: 600;
 }
 h2 + .subtitle {
+  margin-top: -0.5rem;
   font-size: 1.5 rem;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 h3 {

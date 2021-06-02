@@ -1,0 +1,149 @@
+.back-button {display: none;}
+.map-search__wrap {
+    max-width: 300px;
+    .live-search {
+        display: none;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        ul {
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+            li {
+                margin-bottom: 5px;
+                button {
+                    background: none;
+                    border: none;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .no-results {
+        display: none;
+        color: red;
+    }
+}
+.map-min {text-align: center;}
+.map-min svg {
+    width: 60%;
+    height: auto;
+    margin: 20px 0;
+}
+.map-min svg path {
+    cursor: pointer;
+}
+.map-min svg path:hover {
+    fill: #000000;
+}
+.map-min .st0{fill:#FAAD2F;}
+.map-min .st1{fill:#FFFFFF;}
+.map-min .st2{fill:#8C7781;}
+.map-min .st3{fill:#A75849;}
+.map-min .st4{fill:#F4866D;}
+.map-min .st5{fill:#DC589F;}
+.map-min .st6{fill:#F59FA0;}
+.map-min .st7{fill:#F0514F;}
+.map-min .st8{fill:#C0B498;}
+.map-min .st9{fill:#FFF2A8;}
+.map-min .st10{fill:#9E8C44;}
+.map-min .st11{fill:#90416C;}
+.map-min .st12{fill:#404040;}
+
+.map-details {display: none;}
+
+.map-details .fabrics .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#51778D;}
+.map-details .fabrics .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#C63C56;}
+.map-details .fabrics .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#9FCC9F;}
+.map-details .fabrics .st3{fill:#D9776C;}
+.map-details .fabrics .st4{fill-rule:evenodd;clip-rule:evenodd;fill:#4CBDAE;}
+.map-details .fabrics .st5{fill-rule:evenodd;clip-rule:evenodd;fill:#8CAED3;}
+.map-details .fabrics .st6{fill-rule:evenodd;clip-rule:evenodd;fill:#006AAC;}
+.map-details .fabrics .st7{fill-rule:evenodd;clip-rule:evenodd;fill:#E7983A;}
+.map-details .fabrics .st8{fill:#D8AA83;}
+.map-details .fabrics .st9{fill-rule:evenodd;clip-rule:evenodd;fill:#F6C29F;}
+.map-details .fabrics .st10{fill:#205B80;}
+.map-details .fabrics .st11{fill:#9FCC9F;}
+.map-details .fabrics .st12{fill:#4381A6;}
+.map-details .fabrics .st13{fill:#7395BF;}
+.map-details .fabrics .st14{fill-rule:evenodd;clip-rule:evenodd;fill:#D8AA83;}
+.map-details .fabrics .st15{fill:#43525E;}
+.map-details .fabrics .st16{fill-rule:evenodd;clip-rule:evenodd;fill:#D9776C;}
+.map-details .fabrics .st17{fill-rule:evenodd;clip-rule:evenodd;fill:#BDD4E8;}
+.map-details .fabrics .st18{fill-rule:evenodd;clip-rule:evenodd;fill:#F2E0C9;}
+.map-details .fabrics .st19{fill-rule:evenodd;clip-rule:evenodd;fill:#E04B6E;}
+.map-details .fabrics .st20{fill-rule:evenodd;clip-rule:evenodd;fill:#F9E7A9;}
+.map-details .fabrics .st21{fill-rule:evenodd;clip-rule:evenodd;fill:#13334A;}
+.map-details .fabrics .st22{fill:#FFFFFF;}
+.map-details .fabrics .st23{fill-rule:evenodd;clip-rule:evenodd;fill:#9B9198;}
+.map-details .fabrics .st24{fill-rule:evenodd;clip-rule:evenodd;fill:#00A18C;}
+.map-details .fabrics .st25{fill-rule:evenodd;clip-rule:evenodd;fill:#907BB6;}
+.map-details .fabrics .st26{fill:#00A18C;}
+.map-details .fabrics .st27{fill-rule:evenodd;clip-rule:evenodd;fill:#BDBCBC;}
+.map-details .fabrics .st28{fill:#1D1D1B;}
+.map-details .fabrics .st29 supplier-name{font-family:'ArialMT';}
+.map-details .fabrics .st30{font-size:5px;}
+.map-details .fabrics .st31{fill:#BDBCBC;}
+.map-details .fabrics .st32{font-size:4px;}
+.map-details .fabrics .st33{fill:#8CAED3;}
+.map-details .fabrics .st34{fill:#907BB6;}
+.map-details .fabrics .st35{clip-path:url(#SVGID_2_);fill:#1D1D1B;}
+.map-details .fabrics .st36{clip-path:url(#SVGID_4_);fill:#8BADD2;}
+.map-details .fabrics .st37{clip-path:url(#SVGID_4_);fill:none;stroke:#1D1D1B;stroke-width:0.281;}
+.map-details .fabrics .st38{clip-path:url(#SVGID_4_);fill:#1D1D1B;}
+.map-details .fabrics .st39{clip-path:url(#SVGID_6_);fill:#1D1D1B;}
+.map-details .fabrics .st40{fill:#8BADD2;}
+.map-details .fabrics .st41{fill:none;stroke:#1D1D1B;stroke-width:0.281;}
+.map-details .fabrics .st42{fill-rule:evenodd;clip-rule:evenodd;fill:#BDBCBC;stroke:#7395BF;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st43{font-size:2px;}
+.map-details .fabrics .st44{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#7395BF;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st45{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#006AAC;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st46{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#E04B6E;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st47{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#205B80;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st48{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#BDD4E8;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st49{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#4381A6;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st50{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#F9E7A9;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st51{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#F2E0C9;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st52{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#9DCC9E;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st53{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#8CAED3;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st54{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#43525E;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st55{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#4CBDAE;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st56{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#51778D;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st57{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#D9776C;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st58{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#E7983A;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st59{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#F6C29F;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st60{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#C63C56;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st61{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#D8AA83;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st62{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#E7983A;stroke-width:0.2887;stroke-miterlimit:10;}
+.map-details .fabrics .st63{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#9B9198;stroke-width:0.25;stroke-miterlimit:10;}
+.map-details .fabrics .st64{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+.map-details .fabrics .st65{font-size:3px;}
+.map-details .fabrics .st66{font-size:2.2279px;}
+.map-details .fabrics .st67{font-size:3.3px;}
+
+html, body {
+    height: 100%;
+}
+#SVGContainer {
+    height: 100%;
+    position: relative;
+}
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#demoSVG {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .map-min svg {
+        width: 100%;
+    }
+    #demoSVG {
+        height: auto;
+    }
+}

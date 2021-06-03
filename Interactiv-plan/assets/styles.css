@@ -101,224 +101,225 @@
 
 .map-details {
   display: none;
+  height: 100%;
 }
 
-.map-details .fabrics .st0 {
+.map-details .svg-container__fabrics .st0 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #51778D;
 }
 
-.map-details .fabrics .st1 {
+.map-details .svg-container__fabrics .st1 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #C63C56;
 }
 
-.map-details .fabrics .st2 {
+.map-details .svg-container__fabrics .st2 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #9FCC9F;
 }
 
-.map-details .fabrics .st3 {
+.map-details .svg-container__fabrics .st3 {
   fill: #D9776C;
 }
 
-.map-details .fabrics .st4 {
+.map-details .svg-container__fabrics .st4 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #4CBDAE;
 }
 
-.map-details .fabrics .st5 {
+.map-details .svg-container__fabrics .st5 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #8CAED3;
 }
 
-.map-details .fabrics .st6 {
+.map-details .svg-container__fabrics .st6 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #006AAC;
 }
 
-.map-details .fabrics .st7 {
+.map-details .svg-container__fabrics .st7 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #E7983A;
 }
 
-.map-details .fabrics .st8 {
+.map-details .svg-container__fabrics .st8 {
   fill: #D8AA83;
 }
 
-.map-details .fabrics .st9 {
+.map-details .svg-container__fabrics .st9 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #F6C29F;
 }
 
-.map-details .fabrics .st10 {
+.map-details .svg-container__fabrics .st10 {
   fill: #205B80;
 }
 
-.map-details .fabrics .st11 {
+.map-details .svg-container__fabrics .st11 {
   fill: #9FCC9F;
 }
 
-.map-details .fabrics .st12 {
+.map-details .svg-container__fabrics .st12 {
   fill: #4381A6;
 }
 
-.map-details .fabrics .st13 {
+.map-details .svg-container__fabrics .st13 {
   fill: #7395BF;
 }
 
-.map-details .fabrics .st14 {
+.map-details .svg-container__fabrics .st14 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #D8AA83;
 }
 
-.map-details .fabrics .st15 {
+.map-details .svg-container__fabrics .st15 {
   fill: #43525E;
 }
 
-.map-details .fabrics .st16 {
+.map-details .svg-container__fabrics .st16 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #D9776C;
 }
 
-.map-details .fabrics .st17 {
+.map-details .svg-container__fabrics .st17 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #BDD4E8;
 }
 
-.map-details .fabrics .st18 {
+.map-details .svg-container__fabrics .st18 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #F2E0C9;
 }
 
-.map-details .fabrics .st19 {
+.map-details .svg-container__fabrics .st19 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #E04B6E;
 }
 
-.map-details .fabrics .st20 {
+.map-details .svg-container__fabrics .st20 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #F9E7A9;
 }
 
-.map-details .fabrics .st21 {
+.map-details .svg-container__fabrics .st21 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #13334A;
 }
 
-.map-details .fabrics .st22 {
+.map-details .svg-container__fabrics .st22 {
   fill: #FFFFFF;
 }
 
-.map-details .fabrics .st23 {
+.map-details .svg-container__fabrics .st23 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #9B9198;
 }
 
-.map-details .fabrics .st24 {
+.map-details .svg-container__fabrics .st24 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #00A18C;
 }
 
-.map-details .fabrics .st25 {
+.map-details .svg-container__fabrics .st25 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #907BB6;
 }
 
-.map-details .fabrics .st26 {
+.map-details .svg-container__fabrics .st26 {
   fill: #00A18C;
 }
 
-.map-details .fabrics .st27 {
+.map-details .svg-container__fabrics .st27 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #BDBCBC;
 }
 
-.map-details .fabrics .st28 {
+.map-details .svg-container__fabrics .st28 {
   fill: #1D1D1B;
 }
 
-.map-details .fabrics .st29 supplier-name {
+.map-details .svg-container__fabrics .st29 supplier-name {
   font-family: "ArialMT";
 }
 
-.map-details .fabrics .st30 {
+.map-details .svg-container__fabrics .st30 {
   font-size: 5px;
 }
 
-.map-details .fabrics .st31 {
+.map-details .svg-container__fabrics .st31 {
   fill: #BDBCBC;
 }
 
-.map-details .fabrics .st32 {
+.map-details .svg-container__fabrics .st32 {
   font-size: 4px;
 }
 
-.map-details .fabrics .st33 {
+.map-details .svg-container__fabrics .st33 {
   fill: #8CAED3;
 }
 
-.map-details .fabrics .st34 {
+.map-details .svg-container__fabrics .st34 {
   fill: #907BB6;
 }
 
-.map-details .fabrics .st35 {
+.map-details .svg-container__fabrics .st35 {
   clip-path: url(#SVGID_2_);
   fill: #1D1D1B;
 }
 
-.map-details .fabrics .st36 {
+.map-details .svg-container__fabrics .st36 {
   clip-path: url(#SVGID_4_);
   fill: #8BADD2;
 }
 
-.map-details .fabrics .st37 {
+.map-details .svg-container__fabrics .st37 {
   clip-path: url(#SVGID_4_);
   fill: none;
   stroke: #1D1D1B;
   stroke-width: 0.281;
 }
 
-.map-details .fabrics .st38 {
+.map-details .svg-container__fabrics .st38 {
   clip-path: url(#SVGID_4_);
   fill: #1D1D1B;
 }
 
-.map-details .fabrics .st39 {
+.map-details .svg-container__fabrics .st39 {
   clip-path: url(#SVGID_6_);
   fill: #1D1D1B;
 }
 
-.map-details .fabrics .st40 {
+.map-details .svg-container__fabrics .st40 {
   fill: #8BADD2;
 }
 
-.map-details .fabrics .st41 {
+.map-details .svg-container__fabrics .st41 {
   fill: none;
   stroke: #1D1D1B;
   stroke-width: 0.281;
 }
 
-.map-details .fabrics .st42 {
+.map-details .svg-container__fabrics .st42 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #BDBCBC;
@@ -327,11 +328,11 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st43 {
+.map-details .svg-container__fabrics .st43 {
   font-size: 2px;
 }
 
-.map-details .fabrics .st44 {
+.map-details .svg-container__fabrics .st44 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -340,7 +341,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st45 {
+.map-details .svg-container__fabrics .st45 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -349,7 +350,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st46 {
+.map-details .svg-container__fabrics .st46 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -358,7 +359,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st47 {
+.map-details .svg-container__fabrics .st47 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -367,7 +368,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st48 {
+.map-details .svg-container__fabrics .st48 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -376,7 +377,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st49 {
+.map-details .svg-container__fabrics .st49 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -385,7 +386,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st50 {
+.map-details .svg-container__fabrics .st50 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -394,7 +395,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st51 {
+.map-details .svg-container__fabrics .st51 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -403,7 +404,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st52 {
+.map-details .svg-container__fabrics .st52 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -412,7 +413,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st53 {
+.map-details .svg-container__fabrics .st53 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -421,7 +422,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st54 {
+.map-details .svg-container__fabrics .st54 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -430,7 +431,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st55 {
+.map-details .svg-container__fabrics .st55 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -439,7 +440,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st56 {
+.map-details .svg-container__fabrics .st56 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -448,7 +449,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st57 {
+.map-details .svg-container__fabrics .st57 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -457,7 +458,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st58 {
+.map-details .svg-container__fabrics .st58 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -466,7 +467,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st59 {
+.map-details .svg-container__fabrics .st59 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -475,7 +476,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st60 {
+.map-details .svg-container__fabrics .st60 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -484,7 +485,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st61 {
+.map-details .svg-container__fabrics .st61 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -493,7 +494,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st62 {
+.map-details .svg-container__fabrics .st62 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -502,7 +503,7 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st63 {
+.map-details .svg-container__fabrics .st63 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
@@ -511,21 +512,21 @@
   stroke-miterlimit: 10;
 }
 
-.map-details .fabrics .st64 {
+.map-details .svg-container__fabrics .st64 {
   fill-rule: evenodd;
   clip-rule: evenodd;
   fill: #FFFFFF;
 }
 
-.map-details .fabrics .st65 {
+.map-details .svg-container__fabrics .st65 {
   font-size: 3px;
 }
 
-.map-details .fabrics .st66 {
+.map-details .svg-container__fabrics .st66 {
   font-size: 2.2279px;
 }
 
-.map-details .fabrics .st67 {
+.map-details .svg-container__fabrics .st67 {
   font-size: 3.3px;
 }
 
@@ -533,7 +534,7 @@ html, body {
   height: 100%;
 }
 
-#SVGContainer {
+.svg-container {
   height: 100%;
   position: relative;
 }

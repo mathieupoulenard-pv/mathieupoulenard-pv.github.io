@@ -97,7 +97,7 @@ jQuery(document).ready( function () {
                 //instance.zoomIn([{x: 36.5,y: 552.1}, 1]);
             },
             'onValTooSmall': function (val) {
-                console.log('value ' + val + ' is too small');
+                //console.log('value ' + val + ' is too small');
             },
             'prepareQuery': function (val) {
                 return new RegExp(val, "i");
@@ -108,7 +108,7 @@ jQuery(document).ready( function () {
                     console.log(query)*/
                     //console.log(_row.attributes['transform']['nodeValue'].substr())
                     var t = jQuery(_row).addClass('supplier-active').attr('transform').match(/[+-]?([1-9]\d*(\.\d*[1-9])?|0\.\d*[1-9]+)|\d+(\.\d*[1-9])?/g);
-                    jQuery("#live-search-Fabrics").show();
+                    jQuery("#live-search-Fabrics").show().addClass('active');
                     jQuery("#live-search-Fabrics ul").append('<li><button type="button" class="go-supplier" data-x="' + t[4] + '" data-y="' + t[5] + '">' + txt + '</button></li>');
                 }
                 return query.test(txt);
@@ -155,7 +155,7 @@ jQuery(document).ready( function () {
                 //instance.zoomIn([{x: 36.5,y: 552.1}, 1]);
             },
             'onValTooSmall': function (val) {
-                console.log('value ' + val + ' is too small');
+                //console.log('value ' + val + ' is too small');
             },
             'prepareQuery': function (val) {
                 return new RegExp(val, "i");
@@ -166,7 +166,7 @@ jQuery(document).ready( function () {
                     console.log(query)*/
                     //console.log(_row.attributes['transform']['nodeValue'].substr())
                     var t = jQuery(_row).addClass('supplier-active').attr('transform').match(/[+-]?([1-9]\d*(\.\d*[1-9])?|0\.\d*[1-9]+)|\d+(\.\d*[1-9])?/g);
-                    jQuery("#live-search-Accessories").show();
+                    jQuery("#live-search-Accessories").show().addClass('active');
                     jQuery("#live-search-Accessories ul").append('<li><button type="button" class="go-supplier" data-x="' + t[4] + '" data-y="' + t[5] + '">' + txt + '</button></li>');
                 }
                 return query.test(txt);
@@ -180,7 +180,7 @@ jQuery(document).ready( function () {
     // Back button
     jQuery("#back").on('click touch', function() {
         jQuery(".search-supplier-input").val('');
-        jQuery(".live-search").hide();
+        jQuery(".live-search").hide().removeClass('active').children('ul').empty();
         jQuery("#map-min").show();
         jQuery("#map-details").hide();
         jQuery(".svg-container").hide().removeClass('svg-active');
@@ -199,6 +199,9 @@ jQuery(document).ready( function () {
             x: -(zoomInX*realZoom)+(panZoom.getSizes().width/2),
             y: -(zoomInY*realZoom)+(panZoom.getSizes().height/2)
         });
+        console.log(jQuery(this).text())
+        jQuery(".live-search.active").prev().prev().children('input').val(jQuery(this).text());
+        jQuery(".live-search.active").hide();
 
     });
 });

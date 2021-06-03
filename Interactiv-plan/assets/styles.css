@@ -4,9 +4,14 @@
 
 .map-search__wrap {
   max-width: 300px;
+  position: relative;
 }
 .map-search__wrap .live-search {
   display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 .map-search__wrap .live-search ul {

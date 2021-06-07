@@ -180,6 +180,8 @@ header {
 }
 .map-details .svg-container {
   display: none;
+  width: 100%;
+  height: 70%;
 }
 .map-details .supplier-active,
 .map-details .supplier-active tspan {
@@ -193,6 +195,9 @@ header {
 }
 .map-details .svg-pan-zoom-control .svg-pan-zoom-control-background {
   fill: #ffffff;
+}
+.map-details .ico-poi {
+  display: none;
 }
 
 .svg-container {
@@ -837,6 +842,13 @@ header {
 
   #demoSVG {
     height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .map-details .svg-container {
+    display: none;
+    width: 100%;
+    height: calc(40% + 53px);
   }
 }
 

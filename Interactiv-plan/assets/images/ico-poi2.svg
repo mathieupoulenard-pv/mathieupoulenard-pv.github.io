@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Calque_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="102px" height="156.6px"
+	 viewBox="0 0 102 156.6" style="enable-background:new 0 0 102 156.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="152.5" width="100" x="1.5" y="-28.5"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<g>
+		<path class="st0" d="M51.5,28.7c-13,0-23.6,10.6-23.6,23.6C27.8,65.3,38.4,76,51.5,76c13,0,23.7-10.6,23.7-23.7
+			C75.1,39.3,64.5,28.7,51.5,28.7z"/>
+		<path class="st0" d="M51.5,6.4C26.9,6.4,6.9,26.4,6.9,51c0,7.2,1.7,14.1,5,20.4c0,0.1,0.1,0.1,0.1,0.2l0.6,1.1L51.5,145l39.6-73.6
+			c3.3-6.5,5-13.3,5-20.5C96.1,26.4,76.1,6.4,51.5,6.4z M51.5,81.4c-16,0-29.1-13.1-29.1-29.1c0-16,13-29,29.1-29
+			c16,0,29.1,13,29.1,29C80.6,68.3,67.5,81.4,51.5,81.4z"/>
+		<path d="M51.5,1c-27.6,0-50,22.4-50,50c0,8.1,1.9,15.8,5.5,22.6C7,73.8,7.1,74,7.2,74.1l41.9,77.9c0.5,0.9,1.4,1.4,2.4,1.4
+			c1,0,1.9-0.6,2.4-1.4l41.2-76.6l0.8-1.6c3.7-7.2,5.6-14.9,5.6-22.9C101.5,23.4,79.1,1,51.5,1z M91.1,71.4L51.5,145L12.6,72.7
+			L12,71.6c0-0.1-0.1-0.2-0.1-0.2c-3.3-6.4-5-13.2-5-20.4c0-24.6,20-44.6,44.6-44.6c24.6,0,44.6,20,44.6,44.6
+			C96.1,58.1,94.4,65,91.1,71.4z"/>
+		<path d="M51.5,23.2c-16,0-29.1,13-29.1,29c0,16,13,29.1,29.1,29.1c16,0,29.1-13.1,29.1-29.1C80.6,36.3,67.5,23.2,51.5,23.2z
+			 M51.5,76c-13,0-23.6-10.6-23.6-23.7c0-13,10.6-23.6,23.6-23.6c13,0,23.7,10.6,23.7,23.6C75.1,65.3,64.5,76,51.5,76z"/>
+	</g>
+</g>
+</svg>

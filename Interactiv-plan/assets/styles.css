@@ -34,11 +34,11 @@ header {
   margin-bottom: 20px;
 }
 .map-search__wrap {
-  display: -webkit-box;
+  /*display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
   max-width: 300px;
   margin: 0 auto;
   position: relative;
@@ -76,10 +76,10 @@ header {
   color: red;
 }
 .map-search__input {
-  -webkit-box-flex: 0;
+  /*-webkit-box-flex: 0;
   -ms-flex: 0 0 83.333333%;
   flex: 0 0 83.333333%;
-  max-width: 83.333333%;
+  max-width: 83.333333%;*/
 }
 .map-search__input input {
   display: block;

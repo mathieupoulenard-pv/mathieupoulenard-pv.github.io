@@ -69,180 +69,24 @@ jQuery(document).ready( function () {
 
     // Show maps
     jQuery(".show-fabrics").on('click touch', function() {
-        jQuery("#map-min").hide();
-        jQuery("#map-details").show();
-        jQuery("#fabrics").show().addClass('svg-active');
-        jQuery(".map-search").show();
-        jQuery("#back").show();
-        window.panZoom = svgPanZoom('#SVGFabrics', {
-            zoomEnabled: true,
-            controlIconsEnabled: true,
-            zoomScaleSensitivity: 0.5,
-            maxZoom: 15,
-            center: 1,
-            customEventsHandler: eventsHandler
-        });
+        showmaps("#fabrics", "#SVGFabrics");
 
         // Search
-        var qs = jQuery('input#searchSupplierFabrics').quicksearch('#SVGFabrics text', {
-            'delay': 100,
-            'minValLength': 3,
-            'show': function () {
-                this.style.fill = '#000';
-            },
-            'hide': function () {
-                this.style.fill = '#000';
-            },
-            'onBefore': function() {
-                jQuery("#live-search-Fabrics ul").empty();
-                jQuery(".supplier-active").removeClass('supplier-active');
-            },
-            'onAfter': function () {
-                //jQuery(".supplier-active").css('fill', 'red');
-                //instance.setViewBox(36.5, 552.1, 1180, 1180);
-                //instance.setCenter(36.5, 552.1)
-                //instance.zoomIn([{x: 36.5,y: 552.1}, 1]);
-            },
-            'onValTooSmall': function (val) {
-                //console.log('value ' + val + ' is too small');
-            },
-            'prepareQuery': function (val) {
-                return new RegExp(val, "i");
-            },
-            'testQuery': function (query, txt, _row) {
-                if(query.test(txt) == true) {
-                    /*console.log(txt)
-                    console.log(query)*/
-                    //console.log(_row.attributes['transform']['nodeValue'].substr())
-                    var t = jQuery(_row).addClass('supplier-active').attr('transform').match(/[+-]?([1-9]\d*(\.\d*[1-9])?|0\.\d*[1-9]+)|\d+(\.\d*[1-9])?/g);
-                    var bboxResult = jQuery(_row)[0].getBBox();
-                    jQuery("#live-search-Fabrics").show().addClass('active');
-                    jQuery("#live-search-Fabrics ul").append('<li><button type="button" class="go-supplier" data-width="' + bboxResult.width + '" data-height="' + bboxResult.height + '" data-x="' + t[4] + '" data-y="' + t[5] + '">' + txt + '</button></li>');
-                }
-                return query.test(txt);
-            },
-            'onNoResultFound': function () {
-                jQuery("#no-result").show();
-            },
-        });
+        searchSupplier('input#searchSupplierFabrics', '#SVGFabrics', '#live-search-Fabrics');
     });
 
     jQuery(".show-accessories").on('click touch', function() {
-        jQuery("#map-min").hide();
-        jQuery("#map-details").show();
-        jQuery("#accessories").show().addClass('svg-active');
-        jQuery(".map-search").show();
-        jQuery("#back").show();
-        window.panZoom = svgPanZoom('#SVGAccessories', {
-            zoomEnabled: true,
-            controlIconsEnabled: true,
-            zoomScaleSensitivity: 0.5,
-            maxZoom: 15,
-            center: 1,
-            customEventsHandler: eventsHandler
-        });
+        showmaps("#accessories", "#SVGAccessories");
 
         // Search
-        var qs = jQuery('input#searchSupplierAccessories').quicksearch('#SVGAccessories text', {
-            'delay': 100,
-            'minValLength': 3,
-            'show': function () {
-                this.style.fill = '#000';
-            },
-            'hide': function () {
-                this.style.fill = '#000';
-            },
-            'onBefore': function() {
-                jQuery("#live-search-Accessories ul").empty();
-                jQuery(".supplier-active").removeClass('supplier-active');
-            },
-            'onAfter': function () {
-                //jQuery(".supplier-active").css('fill', 'red');
-                //instance.setViewBox(36.5, 552.1, 1180, 1180);
-                //instance.setCenter(36.5, 552.1)
-                //instance.zoomIn([{x: 36.5,y: 552.1}, 1]);
-            },
-            'onValTooSmall': function (val) {
-                //console.log('value ' + val + ' is too small');
-            },
-            'prepareQuery': function (val) {
-                return new RegExp(val, "i");
-            },
-            'testQuery': function (query, txt, _row) {
-                if(query.test(txt) == true) {
-                    /*console.log(txt)
-                    console.log(query)*/
-                    //console.log(_row.attributes['transform']['nodeValue'].substr())
-                    var t = jQuery(_row).addClass('supplier-active').attr('transform').match(/[+-]?([1-9]\d*(\.\d*[1-9])?|0\.\d*[1-9]+)|\d+(\.\d*[1-9])?/g);
-                    var bboxResult = jQuery(_row)[0].getBBox();
-                    jQuery("#live-search-Accessories").show().addClass('active');
-                    jQuery("#live-search-Accessories ul").append('<li><button type="button" class="go-supplier" data-width="' + bboxResult.width + '" data-height="' + bboxResult.height + '" data-x="' + t[4] + '" data-y="' + t[5] + '">' + txt + '</button></li>');
-                }
-                return query.test(txt);
-            },
-            'onNoResultFound': function () {
-                jQuery("#no-result").show();
-            },
-        });
+        searchSupplier('input#searchSupplierAccessories', '#SVGAccessories', '#live-search-Accessories');
     });
 
     jQuery(".show-leather").on('click touch', function() {
-        jQuery("#map-min").hide();
-        jQuery("#map-details").show();
-        jQuery("#leather").show().addClass('svg-active');
-        jQuery(".map-search").show();
-        jQuery("#back").show();
-        window.panZoom = svgPanZoom('#SVGLeather', {
-            zoomEnabled: true,
-            controlIconsEnabled: true,
-            zoomScaleSensitivity: 0.5,
-            maxZoom: 15,
-            center: 1,
-            customEventsHandler: eventsHandler
-        });
+        showmaps("#leather", "#SVGLeather");
 
         // Search
-        var qs = jQuery('input#searchSupplierLeather').quicksearch('#SVGLeather text', {
-            'delay': 100,
-            'minValLength': 3,
-            'show': function () {
-                this.style.fill = '#000';
-            },
-            'hide': function () {
-                this.style.fill = '#000';
-            },
-            'onBefore': function() {
-                jQuery("#live-search-Leather ul").empty();
-                jQuery(".supplier-active").removeClass('supplier-active');
-            },
-            'onAfter': function () {
-                //jQuery(".supplier-active").css('fill', 'red');
-                //instance.setViewBox(36.5, 552.1, 1180, 1180);
-                //instance.setCenter(36.5, 552.1)
-                //instance.zoomIn([{x: 36.5,y: 552.1}, 1]);
-            },
-            'onValTooSmall': function (val) {
-                //console.log('value ' + val + ' is too small');
-            },
-            'prepareQuery': function (val) {
-                return new RegExp(val, "i");
-            },
-            'testQuery': function (query, txt, _row) {
-                if(query.test(txt) == true) {
-                    /*console.log(txt)
-                    console.log(query)*/
-                    //console.log(_row.attributes['transform']['nodeValue'].substr())
-                    var t = jQuery(_row).addClass('supplier-active').attr('transform').match(/[+-]?([1-9]\d*(\.\d*[1-9])?|0\.\d*[1-9]+)|\d+(\.\d*[1-9])?/g);
-                    var bboxResult = jQuery(_row)[0].getBBox();
-                    jQuery("#live-search-Leather").show().addClass('active');
-                    jQuery("#live-search-Leather ul").append('<li><button type="button" class="go-supplier" data-width="' + bboxResult.width + '" data-height="' + bboxResult.height + '" data-x="' + t[4] + '" data-y="' + t[5] + '">' + txt + '</button></li>');
-                }
-                return query.test(txt);
-            },
-            'onNoResultFound': function () {
-                jQuery("#no-result").show();
-            },
-        });
+        searchSupplier('input#searchSupplierLeather', '#SVGLeather', '#live-search-Leather');
     });
 
     // Back button
@@ -297,10 +141,70 @@ jQuery(document).ready( function () {
         jQuery(".live-search.active").hide();
 
     });
+
+    function showmaps(map, svgMap) {
+        jQuery("#map-min").hide();
+        jQuery("#map-details").show();
+        jQuery(map).show().addClass('svg-active');
+        jQuery(".map-search").show();
+        jQuery("#back").show();
+        window.panZoom = svgPanZoom(svgMap, {
+            zoomEnabled: true,
+            controlIconsEnabled: true,
+            zoomScaleSensitivity: 0.5,
+            maxZoom: 15,
+            center: 1,
+            customEventsHandler: eventsHandler
+        });
+    }
 });
 
 function zoomReset(panZoomInstance) {
     panZoomInstance.fit();
     panZoomInstance.center();
     panZoomInstance.zoom(1);
+}
+
+function searchSupplier(input, svgMap, livesearch) {
+    var qs = jQuery(input).quicksearch(svgMap + ' text', {
+        'delay': 100,
+        'minValLength': 3,
+        'show': function () {
+            this.style.fill = '#000';
+        },
+        'hide': function () {
+            this.style.fill = '#000';
+        },
+        'onBefore': function() {
+            jQuery(livesearch + " ul").empty();
+            jQuery(".supplier-active").removeClass('supplier-active');
+        },
+        'onAfter': function () {
+            //jQuery(".supplier-active").css('fill', 'red');
+            //instance.setViewBox(36.5, 552.1, 1180, 1180);
+            //instance.setCenter(36.5, 552.1)
+            //instance.zoomIn([{x: 36.5,y: 552.1}, 1]);
+        },
+        'onValTooSmall': function (val) {
+            //console.log('value ' + val + ' is too small');
+        },
+        'prepareQuery': function (val) {
+            return new RegExp(val, "i");
+        },
+        'testQuery': function (query, txt, _row) {
+            if(query.test(txt) == true) {
+                /*console.log(txt)
+                console.log(query)*/
+                //console.log(_row.attributes['transform']['nodeValue'].substr())
+                var t = jQuery(_row).addClass('supplier-active').attr('transform').match(/[+-]?([1-9]\d*(\.\d*[1-9])?|0\.\d*[1-9]+)|\d+(\.\d*[1-9])?/g);
+                var bboxResult = jQuery(_row)[0].getBBox();
+                jQuery(livesearch).show().addClass('active');
+                jQuery(livesearch + " ul").append('<li><button type="button" class="go-supplier" data-width="' + bboxResult.width + '" data-height="' + bboxResult.height + '" data-x="' + t[4] + '" data-y="' + t[5] + '">' + txt + '</button></li>');
+            }
+            return query.test(txt);
+        },
+        'onNoResultFound': function () {
+            jQuery("#no-result").show();
+        },
+    });
 }

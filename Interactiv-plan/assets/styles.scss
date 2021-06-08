@@ -32,11 +32,11 @@ header {
     display: none;
     margin-bottom: 20px;
     &__wrap {
-        display: -webkit-box;
+        /*display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+        flex-wrap: wrap;*/
         max-width: 300px;
         margin: 0 auto;
         position: relative;
@@ -74,10 +74,10 @@ header {
         }
     }
     &__input {
-        -webkit-box-flex: 0;
+        /*-webkit-box-flex: 0;
         -ms-flex: 0 0 83.333333%;
         flex: 0 0 83.333333%;
-        max-width: 83.333333%;
+        max-width: 83.333333%;*/
         input {
             display: block;
             width: calc(100% - 20px);

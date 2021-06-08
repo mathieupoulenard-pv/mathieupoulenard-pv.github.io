@@ -292,7 +292,7 @@ jQuery(document).ready( function () {
         });
         panZoom.zoom(zoom);
 
-        jQuery(".ico-poi").attr({'x': zoomInX, 'y': zoomInY - 40}).show();
+        jQuery(".svg-active").find(".ico-poi").attr({'x': zoomInX, 'y': zoomInY - 40}).show();
         jQuery(".live-search.active").prev().prev().children('input').val(jQuery(this).text());
         jQuery(".live-search.active").hide();
 

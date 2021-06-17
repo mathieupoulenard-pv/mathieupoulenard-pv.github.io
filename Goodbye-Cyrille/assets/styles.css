@@ -18,7 +18,7 @@ header.anim1 svg {
   height: 200px;
 }
 header.anim1 svg text {
-  font-family: Lora;
+  font-family: "Lora", serif;
   letter-spacing: 10px;
   stroke: #e7a929;
   font-size: 150px;
@@ -39,7 +39,7 @@ header.anim1 svg text {
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 782px;
-  margin: 40px auto;
+  margin: 40px auto 60px;
 }
 .countdown .item {
   -webkit-box-flex: 1;
@@ -82,7 +82,7 @@ header.anim1 svg text {
 }
 
 .cta-wrap {
-  margin-top: 100px;
+  margin-top: 60px;
   text-align: center;
 }
 .cta-wrap .btn {
@@ -108,12 +108,84 @@ header.anim1 svg text {
   box-shadow: none;
 }
 
+.intro {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.date {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #e7a929;
+}
+
 @media (min-width: 769px) {
   .countdown .item .number {
     font-size: 80px;
   }
   .countdown .item .text {
     font-size: 16px;
+  }
+}
+@media (max-width: 1334px) {
+  header.anim1 svg text {
+    font-size: 90px;
+  }
+}
+@media (max-width: 890px) {
+  header.anim1 svg {
+    height: 100px;
+  }
+  header.anim1 svg text {
+    font-size: 70px;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+  header.anim1 svg {
+    height: 90px;
+  }
+  header.anim1 svg text {
+    letter-spacing: 3px;
+    font-size: 42px;
+    font-weight: normal;
+  }
+
+  .countdown {
+    margin: 25px -15px 40px;
+  }
+  .countdown .item:not(:last-child):after {
+    font-size: 30px;
+    right: -4px;
+  }
+  .countdown .item .content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .countdown .item .number {
+    font-size: 30px;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+  }
+
+  .date {
+    font-size: 2rem;
+  }
+
+  .cta-wrap {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 374px) {
+  header.anim1 svg text {
+    font-size: 33px;
   }
 }
 @keyframes textAnimate {

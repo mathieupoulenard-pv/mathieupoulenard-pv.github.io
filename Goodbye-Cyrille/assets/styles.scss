@@ -11,12 +11,11 @@ body {
 }
 header {
     padding: 40px 20px;
-    //background-color: #f2e4da;
     &.anim1 {
         svg {
             height: 200px;
             text {
-                font-family: Lora;
+                font-family: 'Lora', serif;
                 letter-spacing: 10px;
                 stroke: #e7a929;
                 font-size: 150px;
@@ -40,7 +39,7 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 782px;
-    margin: 40px auto;
+    margin: 40px auto 60px;
     .item {
         -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -83,7 +82,7 @@ header {
 }
 
 .cta-wrap {
-    margin-top: 100px;
+    margin-top: 60px;
     text-align: center;
     .btn {
         min-width: 300px;
@@ -111,6 +110,19 @@ header {
     }
 }
 
+.intro {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.date {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #e7a929;
+}
+
 @media (min-width: 769px) {
     .countdown {
         .item {
@@ -119,6 +131,86 @@ header {
             }
             .text {
                 font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1334px) {
+    header {
+        &.anim1 {
+            svg {
+                text {
+                    font-size: 90px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    header {
+        &.anim1 {
+            svg {
+                height: 100px;
+                text {
+                    font-size: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+        &.anim1 {
+            svg {
+                height: 90px;
+                text {
+                    letter-spacing: 3px;
+                    font-size: 42px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .countdown {
+        margin: 25px -15px 40px;
+        .item {
+            &:not(:last-child) {
+                &:after {
+                    font-size: 30px;
+                    right: -4px;
+                }
+            }
+            .content {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .number {
+                font-size: 30px;
+            }
+        }
+    }
+    .intro {
+        font-size: 1.2rem;
+    }
+    .date {
+        font-size: 2rem;
+    }
+    .cta-wrap {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 374px) {
+    header {
+        &.anim1 {
+            svg {
+                text {
+                    font-size: 33px;
+                }
             }
         }
     }

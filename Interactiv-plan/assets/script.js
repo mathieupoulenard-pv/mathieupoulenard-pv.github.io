@@ -1,5 +1,25 @@
 jQuery(document).ready( function () {
 
+
+    //Show popin
+    setTimeout( function(){
+        jQuery(".modal").addClass('show').slideDown();
+    }, 500);
+
+    jQuery("#closeModal").on(
+        'click', function() {
+            jQuery(".modal").removeClass('show').slideUp();
+            jQuery(".help").fadeIn();
+        }
+    );
+
+    jQuery("#openHelpModal").on(
+        'click', function() {
+            jQuery(".modal").addClass('show').slideDown();
+            jQuery(".help").fadeOut();
+        }
+    );
+
     // Zoom mobile
     var eventsHandler;
 
@@ -89,12 +109,27 @@ jQuery(document).ready( function () {
         searchSupplier('input#searchSupplierLeather', '#SVGLeather', '#live-search-Leather');
     });
 
+    // Nav hall buttons
+    jQuery(".nav-hall__btn").on(
+        'click', function() {
+            var map = jQuery(this).data("map");
+            var svgmap = jQuery(this).data("svgmap");
+            var inputsearch = jQuery(this).data("input");
+            var livesearch = jQuery(this).data("livesearch");
+            jQuery(".svg-active").hide();
+
+            showmaps(map, svgmap);
+            searchSupplier(inputsearch, svgmap, livesearch);
+        }
+    );
+
     // Back button
     jQuery("#back").on('click touch', function() {
         jQuery(".search-supplier-input").val('');
         jQuery(".live-search").hide().removeClass('active').children('ul').empty();
         jQuery("#map-min").show();
         jQuery("#map-details").hide();
+        jQuery("#hallNav").hide();
         jQuery(".svg-container").hide().removeClass('svg-active');
         jQuery("#back").hide();
         panZoom.resetZoom()
@@ -140,19 +175,52 @@ jQuery(document).ready( function () {
         jQuery(".live-search.active").prev().prev().children('input').val(jQuery(this).text());
         jQuery(".live-search.active").hide();
 
+        panZoom.setOnZoom(function(level){
+            console.log(level)
+            //console.log(jQuery(".ico-poi")[0].getBoundingClientRect().width)
+            //console.log(jQuery(".ico-poi")[0].getBoundingClientRect().height)
+            if(level < 11 && level > 2) {
+                jQuery(".svg-active").find(".ico-poi").attr('width', 50);
+                jQuery(".svg-active").find(".ico-poi").attr('height', 85);
+                jQuery(".svg-active").find(".ico-poi").attr({'x': zoomInX - 20, 'y': zoomInY - 95});
+            } else if(level < 2) {
+                jQuery(".svg-active").find(".ico-poi").attr('width', 100);
+                jQuery(".svg-active").find(".ico-poi").attr('height', 169);
+                jQuery(".svg-active").find(".ico-poi").attr({'x': zoomInX - 40, 'y': zoomInY - 169});
+            } else {
+                jQuery(".svg-active").find(".ico-poi").attr('width', 20);
+                jQuery(".svg-active").find(".ico-poi").attr('height', 34);
+                jQuery(".svg-active").find(".ico-poi").attr({'x': zoomInX, 'y': zoomInY - 40});
+            }
+        });
+
     });
 
     function showmaps(map, svgMap) {
         jQuery("#map-min").hide();
         jQuery("#map-details").show();
+        var maxzoom = 15;
+        if(map == "#fabrics") {
+            jQuery("#nextHall").hide();
+            jQuery("#prevHall").data({'map': '#accessories', 'svgmap': '#SVGAccessories', 'input': 'input#searchSupplierAccessories', 'livesearch': '#live-search-Accessories'}).show().children().text('Accessories');
+            maxzoom = 30;
+        } else if(map == "#accessories") {
+            jQuery("#prevHall").show().data({'map': '#leather', 'svgmap': '#SVGLeather', 'input': 'input#searchSupplierLeather', 'livesearch': '#live-search-Leather'}).children().text('Leather');
+            jQuery("#nextHall").show().data({'map': '#fabrics', 'svgmap': '#SVGFabrics', 'input': 'input#searchSupplierFabrics', 'livesearch': '#live-search-Fabrics'}).children().text('Fabrics');
+        } else {
+            jQuery("#prevHall").hide();
+            jQuery("#nextHall").show().data({'map': '#accessories', 'svgmap': '#SVGAccessories', 'input': 'input#searchSupplierAccessories', 'livesearch': '#live-search-Accessories'}).children().text('Accessories');
+        }
+        jQuery("#hallNav").show();
         jQuery(map).show().addClass('svg-active');
         jQuery(".map-search").show();
         jQuery("#back").show();
+
         window.panZoom = svgPanZoom(svgMap, {
             zoomEnabled: true,
             controlIconsEnabled: true,
             zoomScaleSensitivity: 0.5,
-            maxZoom: 15,
+            maxZoom: maxzoom,
             center: 1,
             customEventsHandler: eventsHandler
         });

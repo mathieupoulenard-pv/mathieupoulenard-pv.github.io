@@ -1,6 +1,5 @@
 jQuery(document).ready( function () {
 
-
     //Show popin
     setTimeout( function(){
         jQuery(".modal").addClass('show').slideDown();
@@ -87,26 +86,135 @@ jQuery(document).ready( function () {
         }
     });
 
+    //Init live search
+    jQuery("input#searchSupplierFabrics").quicksearch('#SVGFabrics text', {
+        'delay': 100,
+        'minValLength': 3,
+        'show': function () {
+            this.style.fill = '#000';
+        },
+        'hide': function () {
+            this.style.fill = '#000';
+        },
+        'onBefore': function() {
+            jQuery("#live-search-Fabrics ul").empty();
+            jQuery(".supplier-active").removeClass('supplier-active');
+        },
+        'onAfter': function () {
+            //jQuery(".supplier-active").css('fill', 'red');
+            //instance.setViewBox(36.5, 552.1, 1180, 1180);
+            //instance.setCenter(36.5, 552.1)
+            //instance.zoomIn([{x: 36.5,y: 552.1}, 1]);
+        },
+        'onValTooSmall': function (val) {
+            //console.log('value ' + val + ' is too small');
+        },
+        'prepareQuery': function (val) {
+            return new RegExp(val, "i");
+        },
+        'testQuery': function (query, txt, _row) {
+            if(query.test(txt) == true) {
+                var t = jQuery(_row).addClass('supplier-active').attr('transform').match(/[+-]?([1-9]\d*(\.\d*[1-9])?|0\.\d*[1-9]+)|\d+(\.\d*[1-9])?/g);
+                var bboxResult = jQuery(_row)[0].getBBox();
+                jQuery("#live-search-Fabrics").show().addClass('active');
+                jQuery("#live-search-Fabrics ul").append('<li><button type="button" class="go-supplier" data-width="' + bboxResult.width + '" data-height="' + bboxResult.height + '" data-x="' + t[4] + '" data-y="' + t[5] + '">' + txt + '</button></li>');
+            }
+            return query.test(txt);
+        },
+        'onNoResultFound': function () {
+            jQuery("#live-search-Fabrics ul").append('<li>Aucun résultat</li>');
+        },
+    });
+
+    jQuery("input#searchSupplierAccessories").quicksearch('#SVGAccessories text', {
+        'delay': 100,
+        'minValLength': 3,
+        'show': function () {
+            this.style.fill = '#000';
+        },
+        'hide': function () {
+            this.style.fill = '#000';
+        },
+        'onBefore': function() {
+            jQuery("#live-search-Accessories ul").empty();
+            jQuery(".supplier-active").removeClass('supplier-active');
+        },
+        'onAfter': function () {
+            //jQuery(".supplier-active").css('fill', 'red');
+            //instance.setViewBox(36.5, 552.1, 1180, 1180);
+            //instance.setCenter(36.5, 552.1)
+            //instance.zoomIn([{x: 36.5,y: 552.1}, 1]);
+        },
+        'onValTooSmall': function (val) {
+            //console.log('value ' + val + ' is too small');
+        },
+        'prepareQuery': function (val) {
+            return new RegExp(val, "i");
+        },
+        'testQuery': function (query, txt, _row) {
+            if(query.test(txt) == true) {
+                var t = jQuery(_row).addClass('supplier-active').attr('transform').match(/[+-]?([1-9]\d*(\.\d*[1-9])?|0\.\d*[1-9]+)|\d+(\.\d*[1-9])?/g);
+                var bboxResult = jQuery(_row)[0].getBBox();
+                jQuery("#live-search-Accessories").show().addClass('active');
+                jQuery("#live-search-Accessories ul").append('<li><button type="button" class="go-supplier" data-width="' + bboxResult.width + '" data-height="' + bboxResult.height + '" data-x="' + t[4] + '" data-y="' + t[5] + '">' + txt + '</button></li>');
+            }
+            return query.test(txt);
+        },
+        'onNoResultFound': function () {
+            jQuery("#live-search-Accessories ul").append('<li>Aucun résultat</li>');
+        },
+    });
+
+    jQuery("input#searchSupplierLeather").quicksearch('#SVGLeather text', {
+        'delay': 100,
+        'minValLength': 3,
+        'show': function () {
+            this.style.fill = '#000';
+        },
+        'hide': function () {
+            this.style.fill = '#000';
+        },
+        'onBefore': function() {
+            jQuery("#live-search-Leather ul").empty();
+            jQuery(".supplier-active").removeClass('supplier-active');
+        },
+        'onAfter': function () {
+            //jQuery(".supplier-active").css('fill', 'red');
+            //instance.setViewBox(36.5, 552.1, 1180, 1180);
+            //instance.setCenter(36.5, 552.1)
+            //instance.zoomIn([{x: 36.5,y: 552.1}, 1]);
+        },
+        'onValTooSmall': function (val) {
+            //console.log('value ' + val + ' is too small');
+        },
+        'prepareQuery': function (val) {
+            return new RegExp(val, "i");
+        },
+        'testQuery': function (query, txt, _row) {
+            if(query.test(txt) == true) {
+                var t = jQuery(_row).addClass('supplier-active').attr('transform').match(/[+-]?([1-9]\d*(\.\d*[1-9])?|0\.\d*[1-9]+)|\d+(\.\d*[1-9])?/g);
+                var bboxResult = jQuery(_row)[0].getBBox();
+                jQuery("#live-search-Leather").show().addClass('active');
+                jQuery("#live-search-Leather ul").append('<li><button type="button" class="go-supplier" data-width="' + bboxResult.width + '" data-height="' + bboxResult.height + '" data-x="' + t[4] + '" data-y="' + t[5] + '">' + txt + '</button></li>');
+            }
+            return query.test(txt);
+        },
+        'onNoResultFound': function () {
+            jQuery("#live-search-Leather ul").append('<li>Aucun résultat</li>');
+        },
+    });
+
     // Show maps
     jQuery(".show-fabrics").on('click touch', function() {
         showmaps("#fabrics", "#SVGFabrics");
-
-        // Search
-        searchSupplier('input#searchSupplierFabrics', '#SVGFabrics', '#live-search-Fabrics');
     });
 
     jQuery(".show-accessories").on('click touch', function() {
         showmaps("#accessories", "#SVGAccessories");
-
-        // Search
-        searchSupplier('input#searchSupplierAccessories', '#SVGAccessories', '#live-search-Accessories');
     });
 
     jQuery(".show-leather").on('click touch', function() {
         showmaps("#leather", "#SVGLeather");
-
-        // Search
-        searchSupplier('input#searchSupplierLeather', '#SVGLeather', '#live-search-Leather');
     });
 
     // Nav hall buttons
@@ -114,12 +222,9 @@ jQuery(document).ready( function () {
         'click', function() {
             var map = jQuery(this).data("map");
             var svgmap = jQuery(this).data("svgmap");
-            var inputsearch = jQuery(this).data("input");
-            var livesearch = jQuery(this).data("livesearch");
             jQuery(".svg-active").hide();
 
             showmaps(map, svgmap);
-            searchSupplier(inputsearch, svgmap, livesearch);
         }
     );
 
@@ -132,31 +237,14 @@ jQuery(document).ready( function () {
         jQuery("#hallNav").hide();
         jQuery(".svg-container").hide().removeClass('svg-active');
         jQuery("#back").hide();
-        panZoom.resetZoom()
+        panZoom.resetZoom();
     });
 
     jQuery(document).on('click', '.go-supplier', function() {
-        /*jQuery('<path class="ico-poi" d="M50.9,28.7c-13,0-23.6,10.6-23.6,23.6C27.3,65.3,37.9,76,50.9,76c13,0,23.7-10.6,23.7-23.7'+
-        'C74.6,39.3,64,28.7,50.9,28.7z M50.9,6.4C26.3,6.4,6.4,26.4,6.4,51c0,7.2,1.7,14.1,5,20.4c0,0.1,0.1,0.1,0.1,0.2l0.6,1.1L50.9,145'+
-        'l39.6-73.6c3.3-6.5,5-13.3,5-20.5C95.5,26.4,75.5,6.4,50.9,6.4z M50.9,81.4c-16,0-29.1-13.1-29.1-29.1c0-16,13-29,29.1-29'+
-        'c16,0,29.1,13,29.1,29C80,68.3,66.9,81.4,50.9,81.4z M50.9,1c-27.6,0-50,22.4-50,50c0,8.1,1.9,15.8,5.5,22.6'+
-        'c0.1,0.2,0.1,0.4,0.2,0.5l41.9,77.9c0.5,0.9,1.4,1.4,2.4,1.4c1,0,1.9-0.6,2.4-1.4l41.2-76.6l0.8-1.6c3.7-7.2,5.6-14.9,5.6-22.9'+
-        'C100.9,23.4,78.5,1,50.9,1z M90.5,71.4L50.9,145L12.1,72.7l-0.6-1.1c0-0.1-0.1-0.2-0.1-0.2C8,65,6.4,58.2,6.4,51'+
-        'c0-24.6,20-44.6,44.6-44.6c24.6,0,44.6,20,44.6,44.6C95.5,58.1,93.8,65,90.5,71.4z M50.9,23.2c-16,0-29.1,13-29.1,29'+
-        'c0,16,13,29.1,29.1,29.1c16,0,29.1-13.1,29.1-29.1C80,36.3,66.9,23.2,50.9,23.2z M50.9,76c-13,0-23.6-10.6-23.6-23.7'+
-        'c0-13,10.6-23.6,23.6-23.6c13,0,23.7,10.6,23.7,23.6C74.6,65.3,64,76,50.9,76z"/>').insertAfter(jQuery('.supplier-active'));*/
         var zoomInX = jQuery(this).data('x');
         var zoomInY = jQuery(this).data('y');
         var zoomInWidth = jQuery(this).data('width');
         var zoomInHeight = jQuery(this).data('height');
-        //panZoom.center();
-        /*panZoom.pan({x:0,y:0});
-        var realZoom= panZoom.getSizes().realZoom;
-        panZoom.pan
-        ({
-            x: -(zoomInX*realZoom)+(panZoom.getSizes().width/2),
-            y: -(zoomInY*realZoom)+(panZoom.getSizes().height/2)
-        });*/
 
         zoomReset(panZoom);
         var vbb=panZoom.getSizes().viewBox;
@@ -172,13 +260,10 @@ jQuery(document).ready( function () {
         panZoom.zoom(zoom);
 
         jQuery(".svg-active").find(".ico-poi").attr({'x': zoomInX, 'y': zoomInY - 40}).show();
-        jQuery(".live-search.active").prev().prev().children('input').val(jQuery(this).text());
+        jQuery(".live-search.active").prev().children('input').val(jQuery(this).text());
         jQuery(".live-search.active").hide();
 
         panZoom.setOnZoom(function(level){
-            console.log(level)
-            //console.log(jQuery(".ico-poi")[0].getBoundingClientRect().width)
-            //console.log(jQuery(".ico-poi")[0].getBoundingClientRect().height)
             if(level < 11 && level > 2) {
                 jQuery(".svg-active").find(".ico-poi").attr('width', 50);
                 jQuery(".svg-active").find(".ico-poi").attr('height', 85);
@@ -234,7 +319,7 @@ function zoomReset(panZoomInstance) {
 }
 
 function searchSupplier(input, svgMap, livesearch) {
-    var qs = jQuery(input).quicksearch(svgMap + ' text', {
+    window.qs = jQuery(input).quicksearch(svgMap + ' text', {
         'delay': 100,
         'minValLength': 3,
         'show': function () {
@@ -272,7 +357,7 @@ function searchSupplier(input, svgMap, livesearch) {
             return query.test(txt);
         },
         'onNoResultFound': function () {
-            jQuery("#no-result").show();
+            jQuery(livesearch + " ul").append('<li>Aucun résultat</li>');
         },
     });
 }
